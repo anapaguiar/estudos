@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <link rel="stylesheet" href="../_css/estilo.css" />
+    <meta charset="UTF-8">
+    <!--codificacao de caracteres especiais-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- portabilidade para mobile-->
+    <meta name="author" content="Ana Paula Aguiar">
+    <!--autor da pagina-->
+    <meta name="description" content="Curso PHP">
+    <!-- descricao da pagina importante para motores de busca-->
+    <meta name="robots" content="formulario, follow">
+    <!-- para conversar como robo de busca-->
+    <title>Curso de PHP - formularios </title>
+</head>
+
+<body>
+    <div>
+        <form method="post" action="dados.php">
+            Nome: <input type="text" name="name"><br> Ano de nascimento: <input type="number" name="year"><br>
+            <p>
+                <fieldset>
+                    <legend>Sexo:</legend>
+                    <input type="radio" name="sexo" id="fem" value="mulher" checked>
+                    <label for="fem">Feminino</label><br>
+                    <input type="radio" name="sexo" id="masc" value="homem">
+                    <label for="masc">Masculino</label>
+                </fieldset>
+            </p>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+
+</html>
